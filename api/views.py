@@ -1,0 +1,10 @@
+from django.shortcuts import render
+from rest_framework import generics, serializers
+from .serializers import RoomSerializer
+from .models import Room
+
+# Create your views here.
+
+class RoomView(generics.ListAPIView): # Allow us to view and create a Room.
+    queryset = Room.objects.all()
+    serializer_class = RoomSerializer
