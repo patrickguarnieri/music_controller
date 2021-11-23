@@ -2,9 +2,9 @@ const path = require("path");
 const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/index.js",
+  entry: "./src/index.js", // Directory from the entry point.
   output: {
-    path: path.resolve(__dirname, "./static/frontend"),
+    path: path.resolve(__dirname, "./static/frontend"), // Output 
     filename: "[name].js",
   },
   module: {
@@ -19,9 +19,9 @@ module.exports = {
     ],
   },
   optimization: {
-    minimize: true,
+    minimize: true, // Minimize the JS 
   },
-  plugins: [
+  plugins: [ // This is about optimization.
     new webpack.DefinePlugin({
       "process.env": {
         // This has effect on the react lib size
