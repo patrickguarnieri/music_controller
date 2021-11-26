@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 
 export default class JoinRoomPage extends Component {
-    constructor(props) { 
-        super(props); 
-    }
+  constructor(props) {
+    super(props);
+  }
 
-    render (){
-        return <h3>Olhaa a RoomPage aiii genteee!</h3>
-    }
+  render() {
+    return <h3>Olhaa a RoomPage aiii genteee!</h3>;
+  }
 }
